@@ -43,8 +43,8 @@
 		7A97910819E62F84001FFC4D /* libcocos2dAndroid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A97910019E62E40001FFC4D /* libcocos2dAndroid.a */; };
 		7A97911719E631C6001FFC4D /* libcocos2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A97910419E62E40001FFC4D /* libcocos2d-mac.a */; };
 		7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9790FE19E62E40001FFC4D /* libcocos2d.a */; };
-		81FD3A3B1BC38EDE00CF1E06 /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD3A3A1BC38EDE00CF1E06 /* Penguin.swift */; settings = {ASSET_TAGS = (); }; };
-		81FD3A3D1BC38EF400CF1E06 /* Seal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD3A3C1BC38EF400CF1E06 /* Seal.swift */; settings = {ASSET_TAGS = (); }; };
+		818AFC2B1BC392FD0077AD0D /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818AFC2A1BC392FD0077AD0D /* Penguin.swift */; settings = {ASSET_TAGS = (); }; };
+		818AFC2D1BC393210077AD0D /* Seal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818AFC2C1BC393210077AD0D /* Seal.swift */; settings = {ASSET_TAGS = (); }; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		927F61A5196C771E000F43EF /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
 		927F61A9196C771E000F43EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
@@ -173,8 +173,8 @@
 		7AFCD5DB19E9BD9F00BCCCDA /* cocos2d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cocos2d.h; path = "Source/libs/cocos2d-iphone/cocos2d/cocos2d.h"; sourceTree = "<group>"; };
 		7AFCD5DD19E9BDC200BCCCDA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Source/Bridging-Header.h"; sourceTree = "<group>"; };
 		7BF6AF9F1A425F9800FFF9BA /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../../../../Library/SBAndroid/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
-		81FD3A3A1BC38EDE00CF1E06 /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Penguin.swift; path = Source/Penguin.swift; sourceTree = "<group>"; };
-		81FD3A3C1BC38EF400CF1E06 /* Seal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Seal.swift; path = Source/Seal.swift; sourceTree = "<group>"; };
+		818AFC2A1BC392FD0077AD0D /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Penguin.swift; path = Source/Penguin.swift; sourceTree = "<group>"; };
+		818AFC2C1BC393210077AD0D /* Seal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Seal.swift; path = Source/Seal.swift; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		927F61BF196C771E000F43EF /* PeevedPenguins Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PeevedPenguins Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
@@ -440,8 +440,6 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
-				81FD3A3A1BC38EDE00CF1E06 /* Penguin.swift */,
-				81FD3A3C1BC38EF400CF1E06 /* Seal.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -471,6 +469,8 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
+				818AFC2A1BC392FD0077AD0D /* Penguin.swift */,
+				818AFC2C1BC393210077AD0D /* Seal.swift */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -609,7 +609,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					7A4035FE19DDEE84007B6E8F = {
@@ -821,8 +821,8 @@
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
-				81FD3A3B1BC38EDE00CF1E06 /* Penguin.swift in Sources */,
-				81FD3A3D1BC38EF400CF1E06 /* Seal.swift in Sources */,
+				818AFC2B1BC392FD0077AD0D /* Penguin.swift in Sources */,
+				818AFC2D1BC393210077AD0D /* Seal.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -887,6 +887,7 @@
 					"-ObjC",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.PeevedPenguins;
 				PRODUCT_MODULE_NAME = PeevedPenguins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -931,6 +932,7 @@
 					"-ObjC",
 					"-lz",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.PeevedPenguins;
 				PRODUCT_MODULE_NAME = PeevedPenguins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -979,6 +981,7 @@
 					"-lgles_apportable",
 					"-landroid",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.PeevedPenguins;
 				PRODUCT_MODULE_NAME = PeevedPenguins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1027,6 +1030,7 @@
 					"-lgles_apportable",
 					"-landroid",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.PeevedPenguins;
 				PRODUCT_MODULE_NAME = PeevedPenguins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1049,7 +1053,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
@@ -1063,7 +1069,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1083,6 +1089,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
 					"NS_BLOCK_ASSERTIONS=1",
@@ -1094,7 +1101,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1127,6 +1134,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocos2d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PeevedPenguins;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
@@ -1160,6 +1168,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocos2d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PeevedPenguins;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
