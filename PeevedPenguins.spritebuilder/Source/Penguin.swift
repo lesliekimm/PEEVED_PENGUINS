@@ -9,7 +9,5 @@
 import UIKit
 
 class Penguin: CCSprite {
-    func didLoadFromCCB() {
-        print("Penguin created!")
-    }
+
 }

@@ -9,7 +9,5 @@
 import UIKit
 
 class Seal: CCSprite {
-    func didLoadFromCCB() {
-        print("Seal created!")
-    }
+
 }
