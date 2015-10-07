@@ -12,6 +12,7 @@ class Gameplay: CCNode {
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var catapultArm: CCNode!
     weak var levelNode: CCNode!
+    weak var contentNode: CCNode!
     
     // called when CCB file has completed loading
     func didLoadFromCCB() {
@@ -43,7 +44,11 @@ class Gameplay: CCNode {
         // ensure followed object is in visible are when starting
         position = CGPoint.zero
         let actionFollow = CCActionFollow(target: penguin, worldBoundary: boundingBox())
-        runAction(actionFollow)
-        
+        contentNode.runAction(actionFollow)
+     
+        func retry() {
+            let gameplayScene = CCBReader.loadAsScene("Gameplay")
+            CCDirector.sharedDirector().presentScene(gameplayScene)
+        }
     }
 }
